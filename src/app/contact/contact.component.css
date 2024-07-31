@@ -1,0 +1,32 @@
+.form-style{
+  background-color: white;
+  box-shadow: 5px 5px 44px 0px rgba(206, 187, 187, 0.29);
+  border-radius: 5px;
+  padding: 20px;
+}
+input{
+  padding: 20px;
+}
+label{
+  font-weight: bold;
+}
+label span{
+  color: red;
+}
+.map{
+  margin: 10px;
+}
+img{
+  width: 200%;
+  margin-left: 20px;
+  margin-top: 10rem;
+}
+@media (max-width: 990px) {
+  img{
+    width: 100%;
+    margin: 5px;
+  }
+  .map{
+    margin: 0;
+  }
+}
