@@ -23,6 +23,21 @@ export class HomeComponent implements OnInit{
   startVideo() {
     this.maVideo.nativeElement.play();
   }
+  imgUrl=[
+    "boe",
+    "cin",
+    "goo",
+    "bri",
+    "3m",
+    "mic",
+    "atr",
+    "emb",
+    "bom",
+    "hon",
+    "ams",
+    "sat",
+    "air",
+  ]
   services = [
     {
       icon: "bi bi-bar-chart",

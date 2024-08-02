@@ -4,61 +4,47 @@ a{
 }
 .card-icon i{
   font-size: 50px;
-  color: #76b2e5;
+  color:white;
 }
 .card-heading{
   font-size: 25px !important;
+  color: white;
 }
-.card{
-  margin-bottom: 10px;
-  width: 30%;
-  margin-right: 10px;
-  text-align: center;
-}
-.card:hover{
-  background-color: aliceblue;
-  transform: scale(1.05);
-}
-img{
+.service-style img{
   box-shadow: 5px 5px 44px 0px rgba(206, 187, 187, 0.29);
   border-radius: 5px;
   width: 100%;
-  margin-top: 20%;
 }
 .service-style .row{
-  padding-top: 10%;
+  box-shadow: 5px 5px 44px 0px rgba(206, 187, 187, 0.29);
+  padding: 5% 0 5% 0;
+  margin-bottom: 20px;
 }
-.service-style h1{
+
+ h1{
   text-align: center;
-  color: #76b2e5;
+  color: #07365d;
   margin-bottom:40px;
 }
 .service-style div{
-  color: #171212;
+  font-size: 18px;
 }
-@media (max-width:990px) {
-  .card{
-    margin-bottom: 10px;
-    width: 80%;
-    margin-left: 10%;
-  }
 
-}
-video {
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 1;
-  width: 100%;
-}
-.video-wrapper {
-  width: 100%;
-  height:700px;
-  position: relative;
-  overflow: hidden;
+.item{
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 10px;
+  padding: 15px;
+  border: 1px solid;
+  height: 100% ;
+  background-color: #07365d;
+}
+.item:hover{
+  border: none;
+  color: white;
+  background-color: #02233f;
+  transform: scale(1.10);
+}
+
+@media (max-width:990px) {
+
 }

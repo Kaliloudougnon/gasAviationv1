@@ -5,74 +5,25 @@
 </div>
 <div class="container mt-5 mb-5">
   <div class="row">
-    <div class="card col-lg-4 col-md-4 col-sm-12">
-      <a href="/ourService#exchange-section">
-        <div class="card-body">
-          <div class=" card-icon">
-            <i class="bi bi-bar-chart"></i>
+    <div class="col-lg-4 col-md-4 col-sm-12 mb-5" style="" *ngFor="let service of services">
+      <div class="item">
+        <a href="{{service.url}}">
+          <div class="card-body">
+            <div class="card-icon">
+              <i class="{{service.icon}}"></i>
+            </div>
+            <h2 class="card-heading">{{service.header}}<br><br></h2>
           </div>
-          <h1 class=" card-heading">Exchanges<br><br></h1>
-        </div>
-      </a>
-    </div>
-    <div class="card col-lg-4 col-md-4 col-sm-12">
-      <a href="/ourService#repair-section">
-        <div class="card-body">
-          <div class=" card-icon">
-            <i class="bi bi-gear"></i>
-          </div>
-          <h1 class=" card-heading">LOANS AND REPAIR MANAGEMENT<br><br></h1>
-        </div>
-      </a>
-    </div>
-    <div class="card col-lg-4 col-md-4 col-sm-12">
-      <a href="/ourService#sale-section">
-        <div class="card-body">
-          <div class=" card-icon">
-            <i class="bi bi-people"></i>
-          </div>
-          <h1 class=" card-heading">OUTRIGHT SALE<br><br></h1>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="card col-lg-4 col-md-4 col-sm-12">
-      <a href="/ourService#aog-section">
-        <div class="card-body">
-          <div class=" card-icon">
-            <i class="bi bi-people"></i>
-          </div>
-          <h1 class=" card-heading">24/7 AOG SERVICE<br><br></h1>
-        </div>
-      </a>
-    </div>
-    <div class="card col-lg-4 col-md-4 col-sm-12">
-      <a href="/ourService#consume-section">
-        <div class="card-body">
-          <div class=" card-icon">
-            <i class="bi bi-house-gear"></i>
-          </div>
-          <h1 class=" card-heading">CONSUMABLES AND EXPENDABLES<br><br></h1>
-        </div>
-      </a>
-    </div>
-    <div class="card col-lg-4 col-md-4 col-sm-12">
-      <a href="/ourService#leasing-section">
-        <div class="card-body">
-          <div class=" card-icon">
-            <i class="bi bi-house-gear"></i>
-          </div>
-          <h1 class=" card-heading">LEASING<br><br></h1>
-        </div>
-      </a>
+        </a>
+      </div>
     </div>
   </div>
 </div>
-<div class="container service-style mb-5">
+
+<div class="container service-style">
   <div class="row" id="exchange-section">
+    <h1>EXCHANGE</h1>
     <div class="col-lg-6 col-md-6 col-sm-12">
-      <h1>EXCHANGE</h1>
         <div>
           Through our Exchange there is no need for airlines to maintain high cost components in their inventories.
           All the exchange units are provided with full certification, traceability and warranty. The exchange units
@@ -85,11 +36,11 @@
     </div>
   </div>
   <div class="row" id="repair-section">
+    <h1>LOANS AND REPAIR MANAGEMENT</h1>
     <div class="col-lg-6 col-md-6 col-sm-12">
       <img src="assets/imgs/load.png">
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12">
-      <h1>LOANS AND REPAIR MANAGEMENT</h1>
       <div>When an aircraft part breaks down, allow our team to get you off the ground and flying confidently
         with our loans and repair management services. If you’re not ready to exchange a part or invest in a new one,
         General Aviation Support can assist in managing the repair,
@@ -109,8 +60,8 @@
     </div>
   </div>
   <div class="row" id="sale-section">
+    <h1>OUTRIGHT SALE</h1>
     <div class="col-lg-6 col-md-6 col-sm-12">
-      <h1>OUTRIGHT SALE</h1>
       <div>General Aviation Support component is truly Nose-to-Tail solutions, covering everything from Consumables to Rotables,
         Landing Gear to Engines, and all available immediately from our expert AOG team our partners for outright sales to help
         to provide the stock needed to replace your components or to your stock location.
@@ -134,8 +85,8 @@
     </div>
   </div>
   <div class="row" id="aog-section">
+    <h1>AOG SERVICE</h1>
     <div class="col-lg-6 col-md-6 col-sm-12">
-      <h1>AOG SERVICE</h1>
       <div>Our AOG team is available 24/7/365.
         We stock thousands of line items of airworthy material that can always be dispatched within an hour.
         Please reach out anytime via phone or email for your urgent AOG requirements.
@@ -146,8 +97,8 @@
     </div>
   </div>
   <div class="row" id="consume-section">
+    <h1>CONSUMABLES AND EXPENDABLES</h1>
     <div class="col-lg-6 col-md-6 col-sm-12">
-      <h1>CONSUMABLES AND EXPENDABLES</h1>
       <div>General Aviation Support has a large and growing inventory of expendables and consumables.
         Our management program is designed to lower cost and increase efficiency. We are actively looking for
         opportunities to purchase large packages of these materials.
@@ -158,11 +109,12 @@
     </div>
   </div>
   <div class="row" id="leasing-section">
+    <h1>LEASING</h1>
     <div class="col-lg-6 col-md-6 col-sm-12">
+      <img src="assets/imgs/leasing.png" class="mb-2">
       <img src="assets/imgs/leasing.png">
     </div>
     <div class="col-lg-6 col-md-6 col-sm-12">
-      <h1>LEASING</h1>
       <div>General Aviation Support is a company that offers long-term leasing options for planes.
         This allows individuals and businesses to have access to an aircraft for an
         extended period, without the need to purchase a plane outright.

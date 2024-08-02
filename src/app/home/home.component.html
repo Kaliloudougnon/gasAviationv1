@@ -42,18 +42,6 @@
   <div class="box-service">
     <h3 class="text-center pt-1">OUR services</h3>
     <h3 class="text-center">WHAT WE OFFER ?</h3>
-   <!-- <div class="row">
-      <div class="col-lg-6 col-md-6 col-sm-12 mb-3" *ngFor="let service of services">
-        <div class="card">
-          <div class="card-body">
-            <h4 class=" card-heading"><i class="{{service.icon}}"></i> {{service.header}}</h4>
-            <p class="card-text"> {{service.text}}</p>
-            <a href="#" class="card-link" href="{{service.more}}"> Learn more <i
-              class="bi bi-arrow-right"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>-->
     <div class="row" style="margin: auto">
       <div class="col-lg-4 col-md-4 col-sm-12 mb-5" style="" *ngFor="let service of services">
        <div class="item">
@@ -63,6 +51,16 @@
            <p> {{service.text}}</p>
            <a class="btn" href="{{service.more}}"> Learn more <i class="bi bi-arrow-right"></i></a>
          </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="box-part">
+    <h3 class="text-center pt-1 mb-2">OUR PARTENER</h3>
+    <div class="row" style="margin: auto">
+      <div class="col-lg-3 col-md-3 col-sm-12 mb-1" style="" *ngFor="let img of imgUrl">
+       <div class="partLogo">
+         <img src="assets/imgs/gasPart/{{img}}.png">
        </div>
       </div>
     </div>
