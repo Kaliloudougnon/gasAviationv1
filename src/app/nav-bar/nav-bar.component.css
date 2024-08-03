@@ -1,9 +1,15 @@
 nav {
-  background-color: rgb(42, 87, 128);
-  backdrop-filter: blur(30px);
   box-shadow: 5px 5px 44px 0px rgb(113, 170, 218);
   text-align: initial;
   text-transform: uppercase;
+  z-index: 1;
+}
+.scroll-target {
+  background-color: rgb(42, 87, 128,0.3);
+}
+
+.scroll-target.scrolled {
+  background-color: rgb(42, 87, 128);
 }
 .container{
   margin-left: 1%;
@@ -49,7 +55,7 @@ nav {
 }
 
 .offcanvas-end {
-  background-color: rgb(42, 87, 128);
+  background-color: rgb(42, 87, 128,0.3);
   backdrop-filter: blur(30px);
 }
 

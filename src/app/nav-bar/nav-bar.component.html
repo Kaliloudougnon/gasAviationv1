@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg sticky-top">
-  <div class="container ">
+<nav class="navbar scroll-target navbar-expand-lg sticky-top {{isScrolled?'scrolled':''}}">
+  <div class="container " >
     <div class="navbar-brand">
-      <img alt="logo" src="assets/imgs/gas-logo.jpg" class="">
+      <img alt="logo" src="assets/imgs/{{isScrolled?'gas-logo.jpg':'gasLogo1.png'}}" class="">
     </div>
     <div class="collapse navbar-collapse header-right " id="navbarNav">
       <ul class="navbar-nav">

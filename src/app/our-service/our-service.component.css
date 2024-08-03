@@ -44,7 +44,30 @@ a{
   background-color: #02233f;
   transform: scale(1.10);
 }
+@keyframes textclip {
+  from {
+    transform: translateX(80%);
+  }
+  to {
+    transform: translateX(0%);
 
+  }
+}
+@keyframes left-a {
+  from {
+    transform: translateX(-80%);
+  }
+  to {
+    transform: translateX(0%);
+
+  }
+}
+.animate-rigth {
+  animation: textclip 1s linear;
+}
+.animate-left {
+  animation: left-a 1s linear;
+}
 @media (max-width:990px) {
 
 }
