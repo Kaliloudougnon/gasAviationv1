@@ -7,9 +7,10 @@ body{
   font-weight: 500 !important;
 }
 footer{
-  background-color: #07365d;
+  box-shadow: 5px 5px 44px 0px rgba(23, 22, 22, 0.29);
+  background-color: rgb(235, 239, 239);
   font-family: Lato, sans-serif;
-  color: white;
+  color: #07365d;
   padding: 20px;
 }
  .btn{

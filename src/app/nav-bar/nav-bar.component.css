@@ -1,19 +1,22 @@
-nav {
-  box-shadow: 5px 5px 44px 0px rgb(113, 170, 218);
-  text-align: initial;
-  text-transform: uppercase;
-  z-index: 1;
-}
-.scroll-target {
-  background-color: rgb(42, 87, 128,0.3);
-}
-
-.scroll-target.scrolled {
-  background-color: rgb(42, 87, 128);
-}
 .container{
   margin-left: 1%;
 }
+nav {
+  text-align: initial;
+  text-transform: uppercase;
+  z-index: 1;
+  color: #07365d;
+  background-color: rgb(235, 239, 239,0.7);
+}
+.btn{
+  color: white;
+}
+.scroll-target {
+}
+
+.scroll-target.scrolled {
+}
+
 .navbar-nav li {
   display: flex;
   justify-content: space-between;
@@ -24,20 +27,15 @@ nav {
   margin-right: 10px;
 }
 
-.navbar-nav li a ,.btn{
+.navbar-nav li a{
   font-family: Lato, sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  color: white;
+  color: rgb(42, 87, 128);
 }
 .navbar-brand img {
   border-radius: 10%;
   width: 25%;
-}
-.marge {
-  margin-right: 10%;
-  margin-left: 10%;
-  padding: 0%;
 }
 
 .offcanvas-body ul li a {

@@ -6,8 +6,7 @@ import emailjs, {EmailJSResponseStatus} from "@emailjs/browser";
   selector: 'app-contact',
   standalone: true,
   imports: [
-    ReactiveFormsModule,
-    FormsModule
+    ReactiveFormsModule
   ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
@@ -43,7 +42,7 @@ export class ContactComponent implements OnInit {
       subject: this.contactFormGroup.value.subject,
       message: this.contactFormGroup.value.message
     };
-    emailjs.send('service_taxhhwp', 'template_47aafjg', this.templateParams, "GP_r02lDCYQS2h2D6")
+    emailjs.send('', '', this.templateParams, "")
       .then((result: EmailJSResponseStatus) => {
         this.isSend=true;
       }, (error) => {
