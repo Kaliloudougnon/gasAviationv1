@@ -1,9 +1,4 @@
 
-.box-service, .box-part {
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.29);
-  margin: 5%;
-  padding: 5%;
-}
 a {
   text-decoration: none;
   color: white;
@@ -14,7 +9,7 @@ a {
   padding: 15px;
   border: 1px solid;
   height: 100%;
-  background-color: #07365d;
+  background-color: #024b70;
 }
 
 .item img {
@@ -44,14 +39,14 @@ a {
 }
 
 .about-btn {
-  background-color: #07365d !important;
+  background-color: #024b70 !important;
   color: white;
   margin-top: 100px;
   margin-left: 15px;
 }
 
 .item .btn {
-  background-color: #07365d !important;
+  background-color: #61C123 !important;
   border: 1px solid white;
   color: white;
   margin-top: 10px;
@@ -62,7 +57,9 @@ a {
 }
 
 h3 {
-  color: #07365d;
+  color: #024b70;
+  margin-top: 10%;
+  margin-bottom: 2%;
   text-transform: uppercase;
 }
 
@@ -71,7 +68,7 @@ h3 {
   padding: 15px;
   border: 1px solid;
   height: 80%;
-  background-color: #07365d;
+  background-color: #024b70;
 }
 
 .partLogo img {
@@ -79,7 +76,10 @@ h3 {
   height: 100%;
   border-radius: 10px;
 }
-
+.box-about {
+  font-weight: 300;
+  font-size: 20px;
+}
 
 @media (max-width: 990px) {
   .box-service .card {
@@ -97,14 +97,9 @@ h3 {
   .about-btn {
     margin: 20px;
   }
-}
-.box-about {
-  margin: 5%;
-  padding: 5%;
-  box-shadow: 5px 5px 44px 0px rgba(0, 0, 0, 0.29);
+  .box-about img{
+    margin-bottom: 10px;
+  }
 }
 
-.box-about .row {
-  background-color: white !important;
-}
 

@@ -4,3 +4,35 @@
   </video>
 </div>
 
+<div *ngIf="stocksList">
+  <div class="container mt-5 mb-5">
+    <form [formGroup]="searchForm" (ngSubmit)="search()">
+      <div class="input-group mb-5">
+        <input type="text" formControlName="keyWord" class="form-control p-3 " placeholder="Search by part number"  aria-describedby="button-addon2">
+        <button class="btn " type="submit" id="button-addon2">Search Parts</button>
+      </div>
+    </form>
+    <div class="table-responsive">
+      <table class="table table-striped table-responsive-sm ">
+        <thead>
+        <tr>
+          <th>Part Number</th>
+          <th>Description</th>
+          <th>Condition Code</th>
+          <th>Quantity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let piece of stocksList">
+          <td>    {{piece.PN}}</td>
+          <td>    {{piece.description}} </td>
+          <td>
+            {{piece.condition}}</td>
+          <td>    {{piece.quantity}} </td>
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

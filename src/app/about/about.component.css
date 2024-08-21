@@ -2,7 +2,6 @@ section{
   font-size: 20px;
 }
 .style-about{
-  box-shadow: 5px 5px 44px 0px rgba(206, 187, 187, 0.29);
   border-radius: 5px;
   margin: 10%;
   padding-top: 10px;
@@ -16,8 +15,12 @@ section{
   opacity: 0.5;
   z-index: 0;
 }
+p{
+  font-weight: 300;
+  font-size: 25px;
+}
 h1,h3{
-  color: #76b2e5;
+  color: #024b70;
   margin-bottom: 10px;
 }
 @media (max-width:990px) {

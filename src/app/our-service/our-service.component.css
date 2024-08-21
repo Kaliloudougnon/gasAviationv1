@@ -1,6 +1,6 @@
 a{
   text-decoration: none;
-  color:  #07365d;
+  color:  #024b70;
 }
 .card-icon i{
   font-size: 50px;
@@ -16,14 +16,16 @@ a{
   width: 100%;
 }
 .service-style .row{
-  box-shadow: 5px 5px 44px 0px rgba(206, 187, 187, 0.29);
   padding: 5% 0 5% 0;
   margin-bottom: 20px;
 }
-
+p{
+  font-weight: 300;
+  font-size: 20px;
+}
  h1{
   text-align: center;
-  color: #07365d;
+  color:#024b70;
   margin-bottom:40px;
 }
 .service-style div{
@@ -36,12 +38,12 @@ a{
   padding: 15px;
   border: 1px solid;
   height: 100% ;
-  background-color: #07365d;
+  background-color: #024b70;
 }
 .item:hover{
   border: none;
   color: white;
-  background-color: #02233f;
+  background-color: #024b79;
   transform: scale(1.10);
 }
 @keyframes textclip {
@@ -69,5 +71,8 @@ a{
   animation: left-a 1s linear;
 }
 @media (max-width:990px) {
-
+  p{
+    font-weight: 300;
+    font-size: 15px;
+  }
 }
